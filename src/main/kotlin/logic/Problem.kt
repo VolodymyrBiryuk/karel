@@ -4,7 +4,7 @@ class Problem(val index: String, val name: String, val story: String, val goal: 
     val level: Int
         get() = index[0] - '0'
 
-    override fun toString(): String = "$index $name"
+    override fun toString(): String = name
 
     companion object {
         const val HEIGHT = 10
@@ -49,7 +49,7 @@ class Problem(val index: String, val name: String, val story: String, val goal: 
             world.dropBeeper(1, 9).withKarelAt(0, 9, EAST)
         }
 
-        val obtainArtifact = Problem("1.1.1", "obtainArtifact",
+        val obtainArtifact = Problem("1.1.1", "saveBat",
                 "",
                 "\u0004\ua106\u0005\ua106\u0006\u0000\u0001\u0002\u0001\u0001\u0001\u0002\u0001\u0000", 0) {
             val world = FloorPlan.empty.builder().buildVerticalWall(5, 5).world()
