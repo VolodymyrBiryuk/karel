@@ -49,7 +49,7 @@ class Problem(val index: String, val name: String, val story: String, val goal: 
             world.dropBeeper(1, 9).withKarelAt(0, 9, EAST)
         }
 
-        val obtainArtifact = Problem("1.1.1", "saveBat",
+        val saveBat = Problem("1.1.1", "saveBat",
                 "",
                 "\u0004\ua106\u0005\ua106\u0006\u0000\u0001\u0002\u0001\u0001\u0001\u0002\u0001\u0000", 0) {
             val world = FloorPlan.empty.builder().buildVerticalWall(5, 5).world()
@@ -419,7 +419,7 @@ class Problem(val index: String, val name: String, val story: String, val goal: 
         val problems: List<Problem> = listOf(
                 karelsFirstProgram,
 
-                obtainArtifact,
+                saveBat,
                 defuseOneBomb,
                 defuseTwoBombs,
                 practiceHomeRun,

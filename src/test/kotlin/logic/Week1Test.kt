@@ -18,7 +18,7 @@ class Week1Test : WorldTestBase() {
 
     @Test
     fun obtainArtifact() {
-        executeGoal(Problem.obtainArtifact)
+        executeGoal(Problem.saveBat)
         assertKarelAt(3, 5, SOUTH)
         assertSoleBeeperAtKarel()
     }
